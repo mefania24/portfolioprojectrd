@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+
+{% block title %}<h1 style="text-align: center">Anime.mp4</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+    <table bgcolor="blue" aria-setsize="widht,height,color,align," align="center" width="500" heigth="50">
+        <tr><td align="center"><h1>XXTentation.COM</h1></td></tr>
+        <tr>
+            <th><table border="1" align="left"><th>next
+            <th><button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button">next</button>
+            </th></th>
+            </tr>
+            </table>
+
+    <table style="background-color: rgb(243, 137, 8);" aria-setsize="widht,height,color,align," align="center" width="500" heigth="50">
+        <tr><td align="center"><h1>CarHub.com</h1></td></tr>
+        <tr>
+            <th> <table border="1" align="left"> <th>next
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button">next</button>
+            </th></th>
+            </tr>
+            </table>
+{% endblock %}

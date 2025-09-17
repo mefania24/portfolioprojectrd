@@ -1,0 +1,75 @@
+{% extends "index.html" %}
+<html>
+<head><h1 align="center"> PERSONAL INFORMATION SHEET</h1></head>
+{% block title %}<h1 style="text-align: center">Anime.mp4</h1> {% endblock %}
+    <body style="background-color: darkgray;">
+    <form action="all-insert.php" method="get">
+        <h1 align="center"> PERSONAL INFORMATION SHEET</h1>
+        <table border="1" bgcolor="gray" align="center" aria-setsize="width,heigth" width="1000px" height="500px">
+            <tr>
+            <th><h2>PERSONAL INFO</h2></th>
+            <tr>
+                <th><b>STUDENT ID</b><br> <input type="text" name="student_id"></th>
+                <th><b>LAST NAME</b><br> <input type="text" name="lname"></th>
+                <th><b>FIRST NAME/b><br> <input type="text" name="fname"></th>
+                <th><b>MIDDLE NAME</b><br> <input type="text" name="mname"></th>
+            </tr>
+            <tr>
+                <th><b>ADDRESS</b><br> <input type="text" name="address"></th>
+                <th><b>EMAIL</b><br> <input type="text" name="email"></th>
+                <th><b>NATIONALITY</b> <br><input type="text" name="national"></th>
+                <th><b>DATE</b><br> <input type="date" name="date"></th>
+            </tr>
+            <tr>
+                <th><b>BIRTH DATE</b><br> <input type="text" name="bdate"></th>
+                <th><b>CONTACT</b> <br><input type="text" name="contact"></th>
+                <td> <b>ARE YOU IN A RELATIONSHIP?</b>
+                     <input type="radio" name="single" value="single"> <label>Yes</label>
+                     <input type="radio" name="single" value="inrelationship"> <label>No</label>
+                </td>
+                     <td><b>DO YOU HAVE EXPERIENCE?</b><br>
+                     <input type="radio" name="experience" value="i have"   > <label>Yes</label>
+                     <input type="radio" name="experience" value="none"> <label>No</label>
+                </td>
+                    </tr>
+
+
+
+        <br>
+        <th><h2>EDUCATIONAL BACKGROUND</h2></th>
+
+        <tr>
+                <th><b>ELEMENTARY</b><br> <input type="text" name="elementary"></th>
+                <th><b>HIGH SCHOOL</b><br> <input type="text" name="highschool"></th>
+                <th><b>SENIOR HIGH SCHOOL</b><br> <input type="text" name="seniorhigh"></th>
+                <th><b>GRADUATED?</b><br>
+                <input type="radio" name="graduate" value="Yes"   > <label>Yes</label>
+                <input type="radio" name="graduate" value="No"> <label>No</label></th>
+
+            </tr>
+            <tr>
+                <th><b>COLLEGE</b> <br><input type="text" name="college"></th>
+                <th><b>COLLEGE COURSE</b><br> <input type="text" name="course"></th>
+                <th><b>COLLEGE DEGREE</b> <br><input type="text" name="degree"></th>
+                <th><b>SCHOOLAR?</b><br>
+                <input type="radio" name="schoolar" value="Yes"   > <label>Yes</label>
+                <input type="radio" name="scoolar" value="No"> <label>No</label></th>
+            </tr>
+
+        <br>
+
+        <th><h2>ACHIEVEMENTS</h2></th>
+            <tr>
+
+        <th><b>AWARD</b><br> <input type="text" name="award"></th>
+        <th><b>HONOR</b><br> <input type="text" name="honor"></th>
+        <th><b>ORGANIZATIO/CLUB</b> <br><input type="text" name="club"></th>
+        <th><b>ACHIEVEMENTS</b><br> <input type="text" name="achievement"></th>
+        </tr>
+        <br>
+            </tr>
+            <td><button  type="submit">submit</button></td>
+        </table>
+    </form>
+    </body>
+</html>

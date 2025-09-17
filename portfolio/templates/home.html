@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+{% block title %}<h1 style="text-align: center">Home</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+
+    <body style="background-color: rgb(12, 86, 164);" >
+        <form action="practice.php" method="get">
+        <table border="1" bgcolor="blue" align="center"" aria-setsize="widht,height," widht="500" heigth="250">
+            <th><header align="center" >FACEBOOK</header></th
+            <tr><th><b>username</b><input type="text" name="user"></th>
+            <th><b>password</b><input type="password" name="pass"></th>
+            <th><button type="submit">log in</button></th></tr>
+    </table>
+    </form>
+    </body>
+{% endblock %}
+</html>

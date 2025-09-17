@@ -1,0 +1,66 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/music"/>
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block title %}<h1 style="text-align: center">Music.mp3</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+    <table border="1">
+    <tr>
+        <th>Abracadabra</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+        </tr>
+        <tr>
+        <th>Bad Romance</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+            </tr>
+        <tr>
+        <th>Disease</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+            </tr>
+        <tr>
+        <th>Judas</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+            </tr>
+        <tr>
+        <th>poker Face</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+             </tr>
+        <tr>
+        <th>The Edge</th>
+
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+             </tr>
+        <tr>
+        <th>Die With A Smile</th>
+        <td><audio controls src="music/abracadabra.mp3">
+   <source src="music/abracadabra.mp3" type="audio/wav"/>
+  </audio></td>
+    </tr>
+    </table>
+{% endblock %}
+</body>
+</html>
